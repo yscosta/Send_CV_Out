@@ -1,5 +1,4 @@
 from os import getcwd
-import sys
 import time
 import pandas as pd
 import numpy as np

@@ -16,10 +16,10 @@ import json
 
 # Packages to make the data entry.
 from PyQt5.QtWidgets import (QApplication, QTableWidget, QGridLayout, QGroupBox, QVBoxLayout, \
-                             QHBoxLayout, QTabWidget, QWidget, QPushButton, QDialog, \
-                             QSizePolicy, QTableWidgetItem, QLabel, QLineEdit, QTextEdit, \
+                             QTabWidget, QWidget, QPushButton, \
+                             QTableWidgetItem, QLabel, QLineEdit, QTextEdit, \
                              QComboBox, QFileDialog, QMessageBox)
-from PyQt5.QtGui import (QIcon, QColor)
+from PyQt5.QtGui import (QIcon)
 from PyQt5.QtCore import (Qt, QRect)
 
 from lib import EmailManager
