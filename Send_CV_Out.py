@@ -16,9 +16,8 @@ import json
 
 # Packages to make the data entry.
 from PyQt5.QtWidgets import (QApplication, QTableWidget, QGridLayout, QGroupBox, QVBoxLayout, \
-                             QTabWidget, QWidget, QPushButton, \
-                             QTableWidgetItem, QLabel, QLineEdit, QTextEdit, \
-                             QComboBox, QFileDialog, QMessageBox)
+                             QTabWidget, QWidget, QPushButton, QTableWidgetItem, QLabel, QLineEdit, \
+                             QTextEdit,  QComboBox, QFileDialog, QMessageBox)
 from PyQt5.QtGui import (QIcon)
 from PyQt5.QtCore import (Qt, QRect)
 
