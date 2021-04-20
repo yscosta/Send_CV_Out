@@ -10,7 +10,7 @@ base = None
 if sys.platform == "win32":
     base = "Win32GUI"
 
-packages = ["os", "sys", "json", "PyQt5", "smtplib", "ssl", "email"]
+packages = ["os", "sys", "json", "PyQt5", "smtplib", "ssl", "email", "numpy", "pandas"]
 
 includes = []
 
@@ -19,22 +19,20 @@ excludes =["sqlite3", "tensorboard", "tensorflow", "test", "tkinter", "graphviz"
 
 include_files = ["e-mail-icon.jpg"]
 
-options = {
-    "build_exe": {"includes": includes,
-                  "excludes": excludes,
-                  "zip_include_packages": packages,
-                  "include_files": include_files}
-}
+options = {"build_exe": {"includes": includes,
+                         "excludes": excludes,
+                         "zip_include_packages": packages,
+                         "include_files": include_files}
+          }
 
-executables = [Executable("Send_CV_Out.py", base=base)]
+executables = [Executable("Send_CV_Out.py", base=base, icon="e-mail-icon.jpg")]
 
-setup(
-    name="Send_CV_Out",
-    version="1.1",
-    description="Send CV Out by e-mail from a e-mail list.",
-    options=options,
-    executables=executables,
-)
+setup(name="Send_CV_Out",
+      version="1.1",
+      description="Send CV Out by e-mail from a e-mail list.",
+      options=options,
+      executables=executables,
+     )
 
 # Transfere a base de dados para área do executável.
 if os.path.exists('build//exe.win-amd64-3.7'):
