@@ -1,0 +1,15 @@
+.idea/
+env/
+Source/
+venv/
+lib/__pycache__/
+build/
+teste.py
+ui_GUI.py
+GUI.ui
+old_version.py
+quickstart.py
+Send_CV_Out_Google.py
+token.pickle
+teste.py
+Guia_do_Usuario.pptx
